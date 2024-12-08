@@ -18,8 +18,13 @@ crate-type = ["staticlib", "cdylib", "rlib"]
 tauri-build = { version = "2", features = [] }
 
 [dependencies]
-tauri = { version = "2", features = [] }
-tauri-plugin-shell = "2"
+eventsource = "0.5.0"
+eventsource-client = "0.13.0"
+futures = "*"
+reqwest = "*"
+reqwest-eventsource = "0.6.0"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 sse-client = "1.1.1"
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
